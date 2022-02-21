@@ -60,15 +60,6 @@ ul {
     list-style-type: none;
 }
 
-.alert {
-    margin: 2.5rem auto;
-    color: $indigo;
-
-    &.border-start {
-        border-inline-start: 5px solid;
-    }
-}
-
 .btn {
     &.btn-link {
         &:focus,
@@ -121,20 +112,31 @@ ul {
     }
 }
 
-.dropdown {
-    .dropdown-toggle {
-        &::after {
-            display: none;
-        }
-    }
+.card {
+    &.side-bar {
+        border-radius: $border-radius-lg;
+        overflow: hidden;
 
-    .dropdown-menu {
-        .dropdown-item {
-            border-radius: $border-radius;
+        .card-title {
+            margin-bottom: 0;
+        }
+
+        .card-header {
+            background-color: $blue-bold;
+
+            .card-title {
+                color: $white;
+            }
+        }
+
+        .card-footer {
+            padding: 1.5rem;
+            background-color: $white;
         }
     }
 }
 
+// tooltip
 .bs-tooltip-bottom {
     .arrow {
         &::before {
@@ -181,123 +183,7 @@ ul {
     }
 }
 
-.card {
-    &.side-bar {
-        border-radius: $border-radius-lg;
-        overflow: hidden;
-
-        .card-title {
-            margin-bottom: 0;
-        }
-
-        .card-header {
-            background-color: $blue-bold;
-
-            .card-title {
-                color: $white;
-            }
-        }
-
-        .card-body {
-            max-height: 500px;
-            padding: 0;
-            overflow-y: auto;
-
-            .card-body-block {
-                & ~ .card-body-block {
-                    margin-top: 0.5rem;
-                }
-
-                .card-body-title {
-                    .card-title {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 0.5rem 0;
-                        text-align: center;
-                        color: $blue-bold;
-
-                        .count {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 1.5rem;
-                            height: 1.5rem;
-                            margin-inline-end: 0.5rem;
-                            color: $white;
-                            background-color: $blue-bold;
-                            border-radius: 50%;
-                        }
-                    }
-                }
-
-                .card-body-content {
-                    padding: 1.5rem;
-
-                    .item {
-                        & ~ .item {
-                            margin-top: 1rem;
-                        }
-
-                        .label {
-                            font-size: 0.8rem;
-                            color: rgba($color: $black, $alpha: 0.5);
-                        }
-
-                        .data {
-                            padding: 0.5rem 1rem;
-                            border-start-start-radius: 0 !important;
-                            border-radius: 0.36rem;
-                            background-color: $light;
-
-                            @media (min-width: 768px) {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                            }
-
-                            &.extra {
-                                margin-top: 2.5rem;
-                                background-color: $gray-200;
-                            }
-
-                            .value {
-                                font-size: 0.9rem;
-                                color: $black;
-                            }
-
-                            .form-control {
-                                border-start-start-radius: 0 !important;
-                                border-radius: 0.36rem;
-                                height: 2.36rem;
-                                background-color: transparent;
-                                border: none;
-
-                                & ~ .expire-details {
-                                    top: auto;
-                                }
-                            }
-
-                            .actions {
-                                a {
-                                    color: rgba($color: $black, $alpha: 0.5);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .card-footer {
-            padding: 1.5rem;
-            background-color: $white;
-        }
-    }
-}
-
 // Scroll to top button
-
 .scroll-to-top {
     position: fixed;
     right: 1rem;
