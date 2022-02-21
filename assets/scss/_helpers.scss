@@ -1,0 +1,52 @@
+// Helper Classes
+
+.text-blue {
+    color: $blue;
+}
+
+.border-muted {
+    border-color: #c6d8ec !important;
+}
+
+.border-warning-op {
+    border-color: #f6e4bf !important;
+}
+
+.bg-blue-op {
+    background-color: rgba($color: $blue, $alpha: 0.13);
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-indigo {
+    background-color: $indigo;
+}
+
+.bg-success-op {
+    background-color: rgba($color: $success, $alpha: 0.13);
+}
+
+.bg-warning-op {
+    background-color: rgba($color: $warning, $alpha: 0.13);
+}
+
+.bg-danger-op {
+    background-color: rgba($color: $danger, $alpha: 0.13);
+}
+
+.scaled {
+    transform: rotate(100deg);
+}
+
+// border radius
+.rounded-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.rounded-bottom-0 {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}

@@ -1,0 +1,134 @@
+// Override Bootstrap default variables here
+// Do not edit any of the files in /vendor/bootstrap/scss/!
+
+// Color Variables
+// Bootstrap Color Overrides
+
+$white: #fff !default;
+$gray-100: #f8f8f8 !default;
+$gray-200: #eaecf4 !default;
+$gray-300: #d8d8d8 !default;
+$gray-400: #d1d3e2 !default;
+$gray-500: #bebebe !default;
+$gray-600: #858796 !default;
+$gray-700: #6c6c6c !default;
+$gray-800: #5a5c69 !default;
+$gray-900: #403e40 !default;
+$black: #4a4a4a !default;
+
+$blue: #407ff6 !default;
+$blue-bold: #2c72f5 !default;
+$blue-lite: #8fa7d9 !default;
+$indigo: #2151b5 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #ff4848 !default;
+$orange: #fd7e14 !default;
+$yellow: #dca11d !default;
+$green: #6eb43f !default;
+$teal: #20c9a6 !default;
+$cyan: #36b9cc !default;
+
+$theme-colors: (
+    "primary": $indigo,
+    "secondary": $gray-700,
+    "success": $green,
+    "info": $cyan,
+    "warning": $yellow,
+    "danger": $red,
+    "light": $gray-100,
+    "dark": $gray-800,
+);
+
+// Custom Colors
+$brand-google: #ea4335 !default;
+$brand-facebook: #3b5998 !default;
+
+// Set Contrast Threshold
+$yiq-contrasted-threshold: 195 !default;
+
+// Typography
+$body-color: $gray-700 !default;
+$headings-margin-bottom: 0 !default;
+$headings-font-weight: bold;
+$paragraph-margin-bottom: 0 !default;
+$font-family-sans-serif: "Changa", sans-serif !default;
+$link-color: $indigo;
+
+// Shadows
+$box-shadow-sm: 0 0.2rem 0.45rem rgba($blue, 0.08) !default;
+$box-shadow: 0 0.2rem 0.45rem rgba(#000, 0.16) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+
+// Gradient BGs
+$linear-primary-45: linear-gradient(45deg, #001c51, #13539f 35%, #217bd8 100%);
+$linear-danger-45: linear-gradient(45deg, #d90723, #ad3645 100%);
+
+// Borders Radius
+$border-radius: 0.57rem !default;
+$border-color: darken($gray-200, 2%) !default;
+$border-radius-lg: 1.25rem;
+
+// Navbar
+$navbar-brand-padding-y: 0;
+$nav-link-padding-y: 1.75rem;
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-brand-font-size: 0.9rem;
+
+// Breadcrumb
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-padding-y: 0;
+$breadcrumb-item-padding: 1rem;
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $white;
+$breadcrumb-divider: ">";
+$breadcrumb-divider-color: $white;
+
+// Card
+$card-cap-bg: $gray-100 !default;
+$card-border-color: $border-color !default;
+
+// alert
+$alert-padding-y: 1.5rem !default;
+$alert-padding-x: 2rem !default;
+$alert-border-radius: 0.9rem !default;
+
+// Dropdowns
+$dropdown-padding-y: 1rem;
+$dropdown-padding-x: 1rem;
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-x: 1rem;
+$dropdown-link-hover-color: $indigo;
+$dropdown-font-size: 0.86rem !default;
+$dropdown-border-color: $border-color !default;
+
+// Buttons
+$btn-padding-x: 1.5rem;
+$btn-padding-y: 0.8rem;
+$btn-border-width: 0;
+$btn-font-weight: normal;
+$btn-block-spacing-y: 0;
+$btn-focus-box-shadow: none;
+
+// Forms
+$input-focus-box-shadow: none;
+
+// Tooltips
+$tooltip-max-width: 300px;
+$tooltip-padding-x: 1.5rem;
+$tooltip-padding-y: 1.5rem;
+$tooltip-color: $body-color;
+$tooltip-bg: #e7f2ff;
+$tooltip-opacity: 1;
+$tooltip-border-radius: 10px;
+
+// Pagination
+$pagination-border-width: 0;
+$pagination-color: $black;
+$pagination-bg: $gray-200;
+$pagination-hover-color: $blue;
+$pagination-hover-bg: rgba(
+    $color: $blue,
+    $alpha: 0.13,
+); ;
