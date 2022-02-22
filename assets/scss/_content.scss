@@ -1,4 +1,24 @@
 .navbar {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 0 10px 0 rgba($color: #000, $alpha: 0.5);
+    padding-block: 2rem;
+
+    .navbar-nav {
+        & > .dropdown {
+            @media (min-width: 992px) {
+                margin-inline-end: 4.57rem;
+                &:hover {
+                    .dropdown-menu {
+                        display: block;
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            a {
+                color: $gray;
+                &.active {
+                    color: $green;
+                }
+            }
+        }
+    }
 }
