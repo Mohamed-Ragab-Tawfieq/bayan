@@ -54,7 +54,7 @@
 
 section {
     .sec-desc {
-        margin-bottom: 2rem;
+        padding-block: 1rem 2rem;
     }
 
     &.order-details {
@@ -113,6 +113,11 @@ section {
                 // mobile field
                 .iti {
                     flex-grow: 1;
+
+                    .iti__selected-flag {
+                        padding: 0 1.5rem;
+                        border-inline-end: 1px solid #ddd;
+                    }
                 }
 
                 .form-control {
@@ -120,6 +125,29 @@ section {
                     border-radius: 0.25rem !important;
                     border-start-end-radius: 0 !important;
                     border-end-end-radius: 0 !important;
+
+                    &.tele {
+                        padding-inline-start: 7rem;
+                        &::-webkit-input-placeholder {
+                            text-align: center;
+                        }
+                        :-moz-placeholder {
+                            text-align: center;
+                        }
+                        &::-moz-placeholder {
+                            text-align: center;
+                        }
+                        :-ms-input-placeholder {
+                            text-align: center;
+                        }
+                        &::-ms-input-placeholder {
+                            text-align: center;
+                        }
+
+                        &::placeholder {
+                            text-align: center;
+                        }
+                    }
 
                     &:focus {
                         & ~ .input-group-text {
@@ -149,14 +177,19 @@ section {
                 border-bottom: 4px solid $gray;
                 border-radius: 0;
                 padding: 0.5rem 2rem;
-                margin-top: 3rem;
+                margin-block: 3rem;
                 font-weight: bold;
+
+                &:hover {
+                    box-shadow: 0 0.2rem 0.45rem rgba($color: #000, $alpha: 0.16);
+                }
             }
         }
     }
 
+    // custom price section
     &.custom-price {
-        background: #88b745;
+        background: $gray;
         color: #fff;
         padding-block: 2rem;
 
@@ -177,12 +210,21 @@ section {
             @media (min-width: 768px) {
                 width: 60%;
             }
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+
+            img {
+                margin-inline-end: 1rem;
+            }
         }
     }
 }
 
+// footer
 footer {
-    background-color: #6a6a6a;
+    background-color: rgba($color: #000, $alpha: 0.8);
     color: #fff;
     padding-block: 2rem;
 
@@ -215,10 +257,7 @@ footer {
 
         li {
             padding-block: 0.5rem;
-
-            & + li {
-                border-top: 1px solid rgba(#fff, 0.5);
-            }
+            border-bottom: 1px solid rgba(#fff, 0.5);
 
             a {
                 color: #fff;
@@ -226,13 +265,43 @@ footer {
             }
         }
     }
-}
 
-.bottom-bar {
-    background-color: #6a6a6a;
-    color: #fff;
+    // bottom-bar
+    .bottom-bar {
+        color: #fff;
+        margin-top: 2rem;
 
-    .footer-brand {
-        color: $green;
+        @media (min-width: 768px) and (max-width: 991px) {
+            text-align: center;
+
+            .links {
+                margin: auto;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            a {
+                color: #fff;
+                border-bottom: 2px solid transparent;
+                margin-inline-end: 1rem;
+                padding: 0.5rem 0.25rem;
+
+                &:hover {
+                    border-bottom: 2px solid $green;
+                }
+            }
+        }
+
+        .footer-brand {
+            color: $green;
+        }
     }
 }

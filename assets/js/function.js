@@ -28,7 +28,7 @@ window.onload = function () {
         })
 
         // phone on focus border
-        $('.tele').click(function () {
+        $('.tele').focus(function () {
             $('.tele-icon').addClass('blue-brdr')
         })
 
