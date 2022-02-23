@@ -27,15 +27,6 @@ window.onload = function () {
             $('#areaTypeTxt').removeClass('d-none')
         })
 
-        // phone on focus border
-        $('.tele').focus(function () {
-            $('.tele-icon').addClass('blue-brdr')
-        })
-
-        $('.tele').blur(function () {
-            $('.tele-icon').removeClass('blue-brdr')
-        })
-
         // phone inputs
         const phoneInputField = document.querySelector("#phone");
         const phoneInput = window.intlTelInput(phoneInputField, {
