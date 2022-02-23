@@ -122,43 +122,6 @@ section {
                 }
             }
 
-            .btn-prim {
-                margin-top: 3rem;
-            }
-
-            // mobile field
-            .iti {
-                flex-grow: 1;
-
-                .iti__selected-flag {
-                    padding: 0 1.5rem;
-                    border-inline-end: 1px solid #ddd;
-                }
-
-                .tele {
-                    padding-inline-start: 7rem;
-                    &::-webkit-input-placeholder {
-                        text-align: center;
-                    }
-                    :-moz-placeholder {
-                        text-align: center;
-                    }
-                    &::-moz-placeholder {
-                        text-align: center;
-                    }
-                    :-ms-input-placeholder {
-                        text-align: center;
-                    }
-                    &::-ms-input-placeholder {
-                        text-align: center;
-                    }
-
-                    &::placeholder {
-                        text-align: center;
-                    }
-                }
-            }
-
             .input-group {
                 .form-control {
                     border-inline-end: none;
@@ -351,6 +314,18 @@ section {
 
             a {
                 color: #fff;
+            }
+        }
+    }
+
+    // signup
+    &.signup {
+        .terms {
+            margin-top: 1rem;
+
+            a {
+                color: $green;
+                text-decoration: underline;
             }
         }
     }

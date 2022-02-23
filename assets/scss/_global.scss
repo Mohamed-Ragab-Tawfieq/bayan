@@ -42,10 +42,11 @@ a {
 
 label {
     font-weight: bold;
+    margin-inline-start: 1rem;
 }
 
 p {
-    line-height: 30px;
+    line-height: 25px;
 }
 
 ul {
@@ -65,6 +66,7 @@ ul {
         border-radius: 0;
         padding: 0.5rem 2.7rem;
         font-weight: bold;
+        margin-top: 3rem;
 
         &:hover {
             box-shadow: 0 0.2rem 0.45rem rgba($color: #000, $alpha: 0.16);
@@ -78,6 +80,42 @@ ul {
         &.bg-gry {
             background: #8d8c8d;
             border-bottom: 4px solid $green;
+        }
+    }
+}
+
+// mobile field
+.iti {
+    flex-grow: 1;
+
+    .iti__selected-flag {
+        padding: 0 1.5rem;
+        border-inline-end: 1px solid #ddd;
+    }
+
+    .tele {
+        padding-left: 7rem !important;
+
+        &.placehold-cntr {
+            &::-webkit-input-placeholder {
+                text-align: center;
+            }
+            :-moz-placeholder {
+                text-align: center;
+            }
+            &::-moz-placeholder {
+                text-align: center;
+            }
+            :-ms-input-placeholder {
+                text-align: center;
+            }
+            &::-ms-input-placeholder {
+                text-align: center;
+            }
+
+            &::placeholder {
+                text-align: center;
+            }
         }
     }
 }
@@ -148,8 +186,11 @@ section {
     .sec-title,
     .sec-desc {
         position: relative;
-        text-align: center;
-        margin: auto;
+
+        &:not(.strt) {
+            margin: auto;
+            text-align: center;
+        }
 
         @media (min-width: 992px) {
             width: 70%;
