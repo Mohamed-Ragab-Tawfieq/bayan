@@ -23,71 +23,7 @@
     }
 }
 
-.sec-title {
-    position: relative;
-    padding-block: 1rem;
-    &.brder-btm-cntr {
-        &::after {
-            content: "";
-            width: 3rem;
-            height: 5px;
-            background-color: $green;
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            transform: translateX(50%);
-        }
-    }
-
-    &.brder-btm-strt {
-        &::after {
-            content: "";
-            width: 3rem;
-            height: 2px;
-            background-color: $green;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-    }
-}
-
-.btn-prim {
-    &.bg-gren {
-        background: $green;
-        border-bottom: 4px solid $gray;
-    }
-
-    &.bg-gry {
-        background: $gray;
-        border-bottom: 4px solid $green;
-    }
-
-    color: #fff;
-    border-radius: 0;
-    padding: 0.5rem 2rem;
-    margin-block: 3rem;
-    font-weight: bold;
-
-    &:hover {
-        box-shadow: 0 0.2rem 0.45rem rgba($color: #000, $alpha: 0.16);
-    }
-}
-
 section {
-    .sec-title,
-    .sec-desc {
-        position: relative;
-        text-align: center;
-        margin: auto;
-        @media (min-width: 768px) {
-            width: 70%;
-        }
-    }
-    .sec-desc {
-        padding-block: 1rem 2rem;
-    }
-
     &.order-details {
         .form-row {
             // checkbox
@@ -102,6 +38,10 @@ section {
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
+
+                @media (max-width: 767px) {
+                    display: flex;
+                }
 
                 input {
                     position: absolute;
@@ -182,10 +122,8 @@ section {
                 }
             }
 
-            .form-check {
-                @media (max-width: 767px) {
-                    display: flex;
-                }
+            .btn-prim {
+                margin-top: 3rem;
             }
 
             // mobile field
@@ -246,11 +184,144 @@ section {
         }
     }
 
+    &.plans {
+        .col-lg-4 {
+            & + .col-lg-4 {
+                @media (max-width: 991px) {
+                    margin-top: 5rem;
+                }
+            }
+
+            .card {
+                box-shadow: 0 0.2rem 0.5rem rgba($color: #000000, $alpha: 0.26);
+                z-index: 5;
+
+                @media (min-width: 1200px) {
+                    min-height: 55rem;
+                }
+
+                // best seller
+                &.best {
+                    @media (min-width: 992px) {
+                        min-height: 59rem;
+                        margin-top: -1rem;
+                        z-index: 10;
+                    }
+
+                    &::before {
+                        content: "Best Seller";
+                        position: absolute;
+                        right: 50%;
+                        transform: translateX(50%);
+                        bottom: 100%;
+                        text-align: center;
+                        background: #8d8c8d;
+                        color: #fff;
+                        width: 60%;
+                        padding-block: 0.5rem;
+                    }
+
+                    .card-header {
+                        background: $green;
+                        border-top: 4px solid $gray;
+                    }
+
+                    .list-group {
+                        .list-group-item {
+                            padding-inline-start: 3.5rem;
+                        }
+                    }
+
+                    .footer {
+                        .btn-prim {
+                            background: $green;
+                            border-bottom: 4px solid $gray;
+                        }
+                    }
+                }
+
+                .card-header {
+                    border-radius: 0;
+
+                    background: #8d8c8d;
+                    border-top: 4px solid $green;
+
+                    .card-title {
+                        text-align: center;
+                        color: $white;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .list-group {
+                    border-radius: 0;
+
+                    .list-group-item {
+                        padding-inline-start: 3rem;
+                        font-size: 0.9rem;
+                        border: none;
+
+                        &:nth-child(odd) {
+                            background-color: rgba($color: #bdbdbd, $alpha: 0.22);
+                        }
+
+                        &::before {
+                            content: "\f058";
+                            position: absolute;
+                            left: 1rem;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 1.2rem;
+                            color: $green;
+                            margin-inline-end: 0.86rem;
+                        }
+                    }
+                }
+
+                .footer {
+                    text-align: center;
+                    @media (max-width: 991px) {
+                        padding-block: 2rem;
+                    }
+
+                    @media (min-width: 992px) {
+                        position: absolute;
+                        bottom: 2rem;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+
+                    .price {
+                        color: $green;
+                    }
+
+                    .btn {
+                        background: #8d8c8d;
+                        border-bottom: 4px solid $green;
+                        padding: 1rem 5rem;
+                        margin-block: 1rem 0.75rem;
+
+                        @media (max-width: 991px) {
+                            display: block;
+                            margin-inline: auto;
+                        }
+                    }
+
+                    a {
+                        color: gray;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
     // custom price section
     &.custom-price {
         background: $gray;
         color: #fff;
         padding-block: 2rem;
+        margin-top: 6rem;
 
         .sec-title,
         .sec-desc {
@@ -277,6 +348,10 @@ section {
             img {
                 margin-inline-end: 1rem;
             }
+
+            a {
+                color: #fff;
+            }
         }
     }
 }
@@ -285,7 +360,7 @@ section {
 footer {
     background-color: rgba($color: #000, $alpha: 0.8);
     color: #fff;
-    padding-block: 2rem;
+    padding-top: 2rem;
 
     .sec-title {
         margin-bottom: 1rem;

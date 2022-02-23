@@ -1,5 +1,4 @@
 // Global component styles
-
 html {
     position: relative;
     min-height: 100%;
@@ -8,17 +7,6 @@ html {
 
 body {
     overflow-x: hidden;
-
-    &.multi-sections {
-        section {
-            & + section {
-                margin-top: 15rem;
-                @media (max-width: 767px) {
-                    margin-top: 10rem;
-                }
-            }
-        }
-    }
 }
 
 // responsive font size
@@ -72,70 +60,24 @@ ul {
         }
     }
 
-    &.btn-primary {
-        background: $linear-primary-45;
-    }
+    &.btn-prim {
+        color: #fff;
+        border-radius: 0;
+        padding: 0.5rem 2.7rem;
+        font-weight: bold;
 
-    &.btn-danger {
-        background: $linear-danger-45;
-    }
-
-    &.btn-outline-primary {
-        box-shadow: 0 2px 4px rgba($color: #609dff, $alpha: 0.4);
-    }
-
-    &.add-btn {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-
-        & > span {
-            background: #2151b5;
-            color: #fff;
-            border-radius: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 12rem;
-            height: 3.5rem;
-
-            .text {
-                margin-inline-start: 1rem;
-            }
-
-            .icon {
-                width: 2rem;
-                height: 2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 2px solid #fff;
-                border-radius: 50%;
-                margin-inline-end: 1rem;
-            }
-        }
-    }
-}
-
-.card {
-    &.side-bar {
-        border-radius: $border-radius-lg;
-        overflow: hidden;
-
-        .card-title {
-            margin-bottom: 0;
+        &:hover {
+            box-shadow: 0 0.2rem 0.45rem rgba($color: #000, $alpha: 0.16);
         }
 
-        .card-header {
-            background-color: $blue-bold;
-
-            .card-title {
-                color: $white;
-            }
+        &.bg-gren {
+            background: $green;
+            border-bottom: 4px solid $gray;
         }
 
-        .card-footer {
-            padding: 1.5rem;
-            background-color: $white;
+        &.bg-gry {
+            background: #8d8c8d;
+            border-bottom: 4px solid $green;
         }
     }
 }
@@ -179,56 +121,76 @@ ul {
         }
     }
 }
-
-// Scroll to top button
-.scroll-to-top {
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    // display: none;
-    width: 2.75rem;
-    height: 2.75rem;
-    text-align: center;
-    color: $white;
-    background: fade-out($gray-800, 0.5);
-    line-height: 46px;
-    &:focus,
-    &:hover {
-        color: white;
-    }
-
-    &:hover {
-        background: $gray-800;
-    }
-
-    i {
-        font-weight: 800;
-    }
-}
-
 // Scrollbar
 /* width */
-
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
 /* Track */
-
 ::-webkit-scrollbar-track {
     background: #dfdfdf;
 }
 
 /* Handle */
-
 ::-webkit-scrollbar-thumb {
     background: #d1d1d1;
     border-radius: 3px;
 }
 
 /* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
     background: #4a4a4a;
+}
+
+section {
+    .sec-title,
+    .sec-desc {
+        position: relative;
+        text-align: center;
+        margin: auto;
+
+        @media (min-width: 992px) {
+            width: 70%;
+        }
+    }
+
+    .sec-title {
+        position: relative;
+        padding-block: 1rem;
+
+        &.brder-btm-cntr {
+            &::after {
+                content: "";
+                width: 3rem;
+                height: 5px;
+                background-color: $green;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+
+        &.brder-btm-strt {
+            &::after {
+                content: "";
+                width: 3rem;
+                height: 2px;
+                background-color: $green;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .sec-desc {
+        padding-top: 1rem;
+    }
+
+    .sec-cont {
+        padding-top: 2.5rem;
+    }
 }
