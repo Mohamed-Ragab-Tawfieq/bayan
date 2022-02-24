@@ -2,10 +2,18 @@
 
 .fwn {
     font-weight: normal;
+
+    * {
+        font-weight: normal;
+    }
 }
 
 .fwb {
     font-weight: bold;
+
+    * {
+        font-weight: bold;
+    }
 }
 
 .scaled {

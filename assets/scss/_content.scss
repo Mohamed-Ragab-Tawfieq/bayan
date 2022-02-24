@@ -24,6 +24,7 @@
 }
 
 section {
+    // order-details
     &.order-details {
         form {
             .load-wrap {
@@ -192,6 +193,7 @@ section {
         }
     }
 
+    // plans
     &.plans {
         .col-lg-4 {
             & + .col-lg-4 {
@@ -333,6 +335,7 @@ section {
 
         &.bg-gren {
             background-color: $green;
+            margin-top: 1rem;
 
             .sec-title {
                 width: 100%;
@@ -387,6 +390,7 @@ section {
         }
     }
 
+    // success
     &.success {
         .sec-cont {
             text-align: center;
@@ -395,6 +399,71 @@ section {
                 font-weight: normal;
                 display: block;
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    // invoice
+    &.invoice {
+        background-color: #eef5e5;
+
+        .inv-body {
+            background-color: #fff;
+            margin-block: 3rem;
+            padding-inline: 2rem;
+
+            .inv-sec {
+                padding-block: 1.5rem;
+
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid #ccc;
+                }
+
+                .ord-action {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2rem;
+
+                    a {
+                        color: $green;
+                        text-decoration: underline;
+                    }
+                }
+
+                .ord-info {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    @media (min-width: 768px) {
+                        flex-direction: row;
+                    }
+                }
+
+                .com-info {
+                    label {
+                        display: block;
+
+                        & + label {
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                .total {
+                    display: flex;
+                    justify-content: space-between;
+
+                    * {
+                        color: $green;
+                    }
+                }
+
+                .btn-prim {
+                    display: flex;
+                    margin-inline: auto;
+                    font-size: 1.3rem;
+                }
             }
         }
     }

@@ -48,6 +48,15 @@ $brand-facebook: #3b5998 !default;
 // Set Contrast Threshold
 $yiq-contrasted-threshold: 195 !default;
 
+// grid
+$container-max-widths: (
+    xs: 540px,
+    sm: 700px,
+    md: 960px,
+    lg: 1140px,
+    xl: 1250px,
+) !default;
+
 // Typography
 $body-color: $gray-700 !default;
 $headings-margin-bottom: 0 !default;
