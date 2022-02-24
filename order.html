@@ -100,8 +100,6 @@
 
     <!-- order-details -->
     <section class="order-details">
-        <!-- loader -->
-
         <div class="container">
             <div class="sec-title brder-btm-cntr">
                 <h1>Professional Online Translation Services at Flexible Prices</h1>
@@ -116,157 +114,161 @@
                     <h3 class="py-3">Project Information</h3>
 
                     <form>
-                        <div class="loader">
-                            <span class="spin"> <i class="fas fa-spinner fa-pulse"></i></span>
-                        </div>
-
-                        <div class="form-row">
-
-                            <div class="form-group col-md-6">
-                                <label>From</label>
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
-                                <select class="custom-select">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
+                        <div class="load-wrap">
+                            <div class="loader">
+                                <span class="spin"> <i class="fas fa-spinner fa-pulse"></i></span>
                             </div>
 
-                            <div class="form-group col-md-6">
-                                <label>To</label>
-                                <select class="custom-select">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                        </div>
+                            <div class="form-row">
 
-                        <div class="form-row d-flex align-items-end">
-                            <div class="form-group col-12 col-md">
-                                <label>Word count</label>
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
-                                <input type="number" class="form-control" id="wordCount" placeholder="0">
-                            </div>
+                                <div class="form-group col-md-6">
+                                    <label>From</label>
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
+                                    <select class="custom-select">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
 
-                            <div class="form-group col-auto my-auto pt-md-3">or</div>
-
-                            <div class="form-group col-12 col-md">
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
-                                <div class="upload">
-                                    <input class='file-upload' type='file' hidden />
-                                    <input type="text" class="form-control btn-upload" placeholder="Upload File" id="uploadFile">
+                                <div class="form-group col-md-6">
+                                    <label>To</label>
+                                    <select class="custom-select">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
                                 </div>
                             </div>
 
-                            <div class="form-group col-auto my-auto pt-md-3">or</div>
+                            <div class="form-row d-flex align-items-end">
+                                <div class="form-group col-12 col-md">
+                                    <label>Word count</label>
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
+                                    <input type="number" class="form-control" id="wordCount" placeholder="0">
+                                </div>
 
-                            <div class="form-group col-12 col-md">
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
-                                <input type="text" class="form-control" id="typeText" placeholder="Type Text">
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea rows="10" class="form-control d-none" id="areaTypeTxt" placeholder="Type Text"></textarea>
-                            </div>
-                        </div>
+                                <div class="form-group col-auto my-auto pt-md-3">or</div>
 
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label>Subject</label>
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
+                                <div class="form-group col-12 col-md">
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
+                                    <div class="upload">
+                                        <input class='file-upload' type='file' hidden />
+                                        <input type="text" class="form-control btn-upload" placeholder="Upload File" id="uploadFile">
+                                    </div>
+                                </div>
 
-                                <select class="custom-select">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
+                                <div class="form-group col-auto my-auto pt-md-3">or</div>
 
-                            <div class="form-group col-md-6">
-                                <label>Delivery Date</label>
-
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
-
-                                <select class="custom-select">
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group col-lg-6 d-flex justify-content-between align-items-center">
-                                <label class="form-check mx-0">
-                                    I would like to receive dtp services for my documents.
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-
-                                <span class="qmark mt-n2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
+                                <div class="form-group col-12 col-md">
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
+                                    <input type="text" class="form-control" id="typeText" placeholder="Type Text">
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea rows="10" class="form-control d-none" id="areaTypeTxt" placeholder="Type Text"></textarea>
+                                </div>
                             </div>
 
-                            <div class="form-group col-lg-6 d-flex justify-content-between align-items-center">
-                                <label class="form-check mx-0">
-                                    Certified Translator
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Subject</label>
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
+
+                                    <select class="custom-select">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label>Delivery Date</label>
+
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
+
+                                    <select class="custom-select">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label>Contact Information</label>
-                                <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                    <i class="far fa-question-circle"></i>
-                                    <div class="triangle d-none"></div>
-                                </span>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6 d-flex justify-content-between align-items-center">
+                                    <label class="form-check mx-0">
+                                        I would like to receive dtp services for my documents.
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
 
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                    <span class="input-group-text">
-                                        <span class="qmark mt-0" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                            <i class="far fa-question-circle"></i>
-                                            <div class="triangle d-none"></div>
-                                        </span>
+                                    <span class="qmark mt-n2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
                                     </span>
                                 </div>
+
+                                <div class="form-group col-lg-6 d-flex justify-content-between align-items-center">
+                                    <label class="form-check mx-0">
+                                        Certified Translator
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
                             </div>
 
-                            <div class="form-group col-md-6 d-flex align-items-end">
-                                <input id="phone" type="tel" class="form-control tele placehold-cntr" placeholder="Phone" name="phone" />
-                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Contact Information</label>
+                                    <span class="qmark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-question-circle"></i>
+                                        <div class="triangle d-none"></div>
+                                    </span>
 
-                            <div class="form-group col-md-6">
-                                <input type="mail" class="form-control" placeholder="Mail">
-                            </div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                        <span class="input-group-text">
+                                            <span class="qmark mt-0" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                                <i class="far fa-question-circle"></i>
+                                                <div class="triangle d-none"></div>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
 
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Company">
-                            </div>
+                                <div class="form-group col-md-6 d-flex align-items-end">
+                                    <input id="phone" type="tel" class="form-control tele placehold-cntr" placeholder="Phone" name="phone" />
+                                </div>
 
+                                <div class="form-group col-md-6">
+                                    <input type="mail" class="form-control" placeholder="Mail">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Company">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
                             <div class="form-group col-12 text-center">
                                 <button class="btn btn-prim bg-gren">Get Prices</button>
                             </div>
