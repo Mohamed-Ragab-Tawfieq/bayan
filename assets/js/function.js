@@ -5,6 +5,8 @@ window.onload = function () {
 
         'use strict';
 
+        // loader
+        $('.loader').delay(200).fadeOut(500);
 
         // BS Tooltip
         $('[data-toggle="tooltip"]').tooltip({

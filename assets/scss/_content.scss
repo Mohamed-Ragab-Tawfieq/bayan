@@ -26,6 +26,10 @@
 section {
     &.order-details {
         .form-row {
+            label {
+                margin-inline-start: 1rem;
+            }
+
             // checkbox
             .form-check {
                 display: block;
@@ -281,10 +285,22 @@ section {
 
     // custom price section
     &.custom-price {
-        background: $gray;
         color: #fff;
         padding-block: 2rem;
         margin-top: 6rem;
+        background-color: $gray;
+
+        &.bg-gren {
+            background-color: $green;
+
+            .sec-title {
+                width: 100%;
+
+                @media (min-width: 992px) {
+                    width: 50%;
+                }
+            }
+        }
 
         .sec-title,
         .sec-desc {
@@ -326,6 +342,18 @@ section {
             a {
                 color: $green;
                 text-decoration: underline;
+            }
+        }
+    }
+
+    &.success {
+        .sec-cont {
+            text-align: center;
+
+            label {
+                font-weight: normal;
+                display: block;
+                margin-bottom: 0;
             }
         }
     }
