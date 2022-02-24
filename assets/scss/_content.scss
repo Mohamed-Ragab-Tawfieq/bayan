@@ -4,7 +4,8 @@
     .navbar-nav {
         & > .dropdown {
             @media (min-width: 992px) {
-                margin-inline-end: 4.57rem;
+                margin-inline-end: 3rem;
+
                 &:hover {
                     .dropdown-menu {
                         display: block;
