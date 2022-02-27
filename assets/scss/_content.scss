@@ -506,14 +506,94 @@ section {
         }
     }
 
-    // signup
-    &.signup {
-        .terms {
+    // signin
+    &.signin {
+        .sec-title {
+            color: $green;
+            padding-block: 1rem 0;
+        }
+
+        .form-group {
+            .btn-prim {
+                padding-inline: 4rem;
+            }
+        }
+
+        .no-account {
             margin-top: 1rem;
 
             a {
                 color: $green;
                 text-decoration: underline;
+            }
+        }
+
+        .summary {
+            background-color: #eef5e5;
+            padding-block: 3rem 7rem;
+            padding-inline: 2.5rem;
+
+            @media (max-width: 991px) {
+                padding-inline: 1rem;
+
+                .sec-title,
+                .summ-item {
+                    flex-direction: column;
+                    align-items: flex-start !important;
+                    justify-content: start !important;
+                }
+            }
+
+            * {
+                color: $gray;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+
+            hr {
+                border-top: 2px solid #7c7c7c;
+                margin-inline: auto;
+                margin-block: 3rem;
+                width: 80%;
+            }
+
+            .sec-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::after {
+                    @media (max-width: 767px) {
+                        content: none;
+                    }
+                }
+            }
+
+            .summ-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1rem;
+            }
+
+            .total {
+                .btn-prim {
+                    color: #fff;
+                    display: flex;
+                    margin: auto;
+                    padding-inline: 2.5rem;
+                    font-size: 1.8rem;
+
+                    @media (max-width: 767px) {
+                        padding-inline: 1rem;
+                    }
+
+                    * {
+                        color: #fff;
+                    }
+                }
             }
         }
     }
