@@ -47,23 +47,18 @@ window.onload = function () {
         } else {
             // on mobile
             $('.dropdown.my-auto').find('a').click(function (e) {
-                $('.dropdown-menu').removeClass('show');
                 $(this).next('.dropdown-menu').toggleClass('show');
                 e.stopPropagation();
                 e.preventDefault();
             })
 
             $(".trigger").click(function () {
-                // $(".navbar-nav a").removeClass("active focus");
                 $(this).parent().find('.sub-menu').toggleClass('shown');
-                // $(this).parent().parent().toggleClass('show');
-                // $(this).parent().parent().parent().addClass('show');
-                // $(this).parent().parent().parent().find('a[data-toggle]').dropdown('show');
             });
 
-            // $(".sub-menu").click(function () {
-            //     $(this).toggleClass('show');
-            // });
+            $('.navbar-toggler').click(function () {
+                $(this).find('.navbar-toggler-icon, .fa-times').toggleClass('d-none d-block');
+            })
 
         }
 
