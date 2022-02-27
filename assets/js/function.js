@@ -31,17 +31,31 @@ window.onload = function () {
 
 
         // navbar submenu
-        $(".trigger").mouseenter(function () {
-            $(this).next('.sub-menu').addClass('show');
-        });
+        if (window.outerWidth >= 992) {
+            $(".trigger").mouseenter(function () {
+                $(this).next('.sub-menu').addClass('show');
+            });
 
-        $(".sub-menu").mouseenter(function () {
-            $(this).addClass('show');
-        });
+            $(".sub-menu").mouseenter(function () {
+                $(this).addClass('show');
+            });
 
-        $(".trigger").mouseleave(function () {
-            $(this).next('.sub-menu').removeClass('show');
-        });
+            $(".trigger").mouseleave(function () {
+                $(this).next('.sub-menu').removeClass('show');
+            });
+        } else {
+
+            $(".trigger").click(function () {
+                $(this).next('.sub-menu').addClass('show');
+                $(this).parent().parent().addClass('show');
+                $(this).parent().parent().parent().addClass('show');
+            });
+
+            // $(".sub-menu").click(function () {
+            //     $(this).toggleClass('show');
+            // });
+
+        }
 
         (jQuery);
     });
