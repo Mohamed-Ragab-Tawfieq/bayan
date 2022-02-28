@@ -335,13 +335,13 @@ section {
                 z-index: 5;
 
                 @media (min-width: 1200px) {
-                    min-height: 55rem;
+                    min-height: 30rem;
                 }
 
                 // best seller
                 &.best {
                     @media (min-width: 992px) {
-                        min-height: 59rem;
+                        min-height: 33rem;
                         margin-top: -1rem;
                         z-index: 10;
                     }
