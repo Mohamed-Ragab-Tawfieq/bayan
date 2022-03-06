@@ -370,7 +370,7 @@ section {
                         }
                     }
 
-                    .footer {
+                    .card-footer {
                         .btn-prim {
                             background: $green;
                             border-bottom: 4px solid $gray;
@@ -416,18 +416,15 @@ section {
                     }
                 }
 
-                .footer {
-                    text-align: center;
-                    @media (max-width: 991px) {
-                        padding-block: 2rem;
-                    }
+                .card-footer {
+                    // @media (max-width: 991px) {
+                    //     padding-block: 2rem;
+                    // }
 
-                    @media (min-width: 992px) {
-                        position: absolute;
-                        bottom: 2rem;
-                        right: 50%;
-                        transform: translateX(50%);
-                    }
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 3rem;
+                    text-align: center;
 
                     .price {
                         color: $green;
