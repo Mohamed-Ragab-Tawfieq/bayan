@@ -417,13 +417,9 @@ section {
                 }
 
                 .card-footer {
-                    // @media (max-width: 991px) {
-                    //     padding-block: 2rem;
-                    // }
-
                     display: flex;
                     flex-direction: column;
-                    padding-bottom: 3rem;
+                    padding-bottom: 1rem;
                     text-align: center;
 
                     .price {
