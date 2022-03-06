@@ -529,7 +529,7 @@ section {
 
         .summary {
             background-color: #eef5e5;
-            padding-block: 3rem 7rem;
+            padding-bottom: 1rem;
             padding-inline: 2.5rem;
 
             @media (max-width: 991px) {
@@ -568,16 +568,20 @@ section {
                 }
             }
 
-            .summ-item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 1rem;
+            .sec-cont {
+                padding-top: 0 !important;
 
-                @media (max-width: 991px) {
-                    flex-direction: column;
-                    align-items: flex-start !important;
-                    justify-content: start !important;
+                .summ-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 0.5rem;
+
+                    @media (max-width: 991px) {
+                        flex-direction: column;
+                        align-items: flex-start !important;
+                        justify-content: start !important;
+                    }
                 }
             }
 
