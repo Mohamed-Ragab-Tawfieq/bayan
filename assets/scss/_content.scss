@@ -331,18 +331,16 @@ section {
             }
 
             .card {
+                border: none;
+                border-radius: 0;
                 box-shadow: 0 0.2rem 0.5rem rgba($color: #000000, $alpha: 0.26);
                 z-index: 5;
-
-                @media (min-width: 1200px) {
-                    min-height: 30rem;
-                }
 
                 // best seller
                 &.best {
                     @media (min-width: 992px) {
-                        min-height: 33rem;
                         margin-top: -1rem;
+                        padding-bottom: 1rem;
                         z-index: 10;
                     }
 
@@ -421,6 +419,14 @@ section {
                     flex-direction: column;
                     padding-bottom: 1rem;
                     text-align: center;
+                    background-color: #fff;
+                    border: none;
+                    // position: absolute;
+                    // top: 100%;
+                    // right: 50%;
+                    // transform: translateX(50%);
+                    // width: 100%;
+                    // box-shadow: 0rem 0.4rem 0.5rem rgba($color: #000, $alpha: 0.26);
 
                     .price {
                         color: $green;
@@ -450,8 +456,8 @@ section {
     // custom price section
     &.custom-price {
         color: #fff;
-        padding-block: 2rem;
         margin-top: 6rem;
+        padding-block: 2rem;
         background-color: $gray;
 
         &.bg-gren {
